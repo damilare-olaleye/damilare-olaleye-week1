@@ -1,7 +1,7 @@
 
 public class Application {
 	/*
-	 * Introduction to Java and Java naming conventions
+	 * Introduction to Java
 	 */
 
 	// Java is a high-level, compiled, strongly-typed, Object Oriented Language
@@ -69,25 +69,8 @@ public class Application {
 	
 	// JRE (Java Runtime Environment): Contains the runtime libraries that our code may be using + JVM
 	// 		- We would install a JRE instead of a JDK if all we need to do is run programs that have already been compiled 
-	//	- For example, if you are a customer, you will not be developing the software and having to compile
-	//			the software yourself
+	//		- For example, 
 
-	// JVM (Java Virtual Machine): Enables a computer to actually execute a Java program. The JVM is what
-	//		actually runs the bytecode (compiled) and then translate it so that the machine can understand
-	//		the bytecode
-
-	// Summary: If we want to both write and run Java programs, we should install a JDK (because it has
-	//			a compiler). If we only want to run Java programs, we should install a JRE.
-	
-	/*
-	 * Java Naming Conventions
-	 */
-	
-	// Classes: class names should be nouns with the first letter of each word capitalized. (ex. public class SodaCan)
-	// Methods: Verbs, mixed case with the first letter lowercase, and every subsequent word's first letter capitalized (ex. public static void makeAlotOfNoise() {})
-	// Variables: nouns, but same naming convention as methods (ex. int numberOfLegs = 10;)
-	// Project names: snake case (all lower case with hyphens between words) (ex. my-first-project)
-		
 	
 	
 	public static void main(String[] args) {
