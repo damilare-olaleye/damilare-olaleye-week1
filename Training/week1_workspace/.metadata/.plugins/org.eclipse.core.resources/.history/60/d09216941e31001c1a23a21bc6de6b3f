@@ -16,14 +16,14 @@ public class Main {
 		student.studentInformation(4123, 23);
 		System.out.println(student.age);
 		
-//		student.studentInformation("Mattew", "1500 John rd");
-//		System.out.println(student.name + " " + student.address);
+		student.studentInformation("Mattew", "1500 John rd");
+		System.out.println(student.name + student.address);
 		
 		
 	}
 	
 	public static void welcomeStudent() {
-		System.out.println("*** Hello new student! tell us about yourself ***");
+		System.out.println("*** Hello new student, tell us about yourself ***");
 		System.out.println();
 	}
 

@@ -18,12 +18,12 @@ public class Student {
 		System.out.println("my id is: " + this.id);
 		System.out.println("my name is: " + this.name);
 		System.out.println("I live at: " + this.address);
-		System.out.println("I am: " + this.age + " years old.");
+		System.out.println("I am: " + this.age);
 	}
 	
 	
 	public void studentInformation(int id, int age) {
-		System.out.println(this.id + 4100);
+		System.out.println(this.id + 00100);
 		System.out.println(this.age + 23);
 	}
 	

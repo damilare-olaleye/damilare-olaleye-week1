@@ -8,22 +8,22 @@ public class Main {
 		
 		welcomeStudent();
 		
-		Student student = new Student(4132, "John Baptise", "1500 John rd", 23);
+		Student student = new Student(001, "Mattew", "1500 Lucas rd", 23);
 		
 		student.studentInformation();
 		System.out.println(student.id);
 		
-		student.studentInformation(4123, 23);
+		student.studentInformation(001, 23);
 		System.out.println(student.age);
 		
-//		student.studentInformation("Mattew", "1500 John rd");
-//		System.out.println(student.name + " " + student.address);
+		student.studentInformation("Mattew", "1500 John rd");
+		System.out.println(student.name + student.address);
 		
 		
 	}
 	
 	public static void welcomeStudent() {
-		System.out.println("*** Hello new student! tell us about yourself ***");
+		System.out.println("***Hello new student***");
 		System.out.println();
 	}
 

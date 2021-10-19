@@ -23,7 +23,7 @@ public class Main {
 	}
 	
 	public static void welcomeStudent() {
-		System.out.println("*** Hello new student! tell us about yourself ***");
+		System.out.println("*** Hello new student, tell us about yourself ***");
 		System.out.println();
 	}
 
