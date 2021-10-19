@@ -80,7 +80,7 @@ public class Application {
 	//			a compiler). If we only want to run Java programs, we should install a JRE.
 	
 	/*
-	 * Java Naming Conventions
+	 * Java Naming Convention
 	 */
 	
 	// Classes: class names should be nouns with the first letter of each word capitalized. (ex. public class SodaCan)
