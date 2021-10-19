@@ -1,0 +1,13 @@
+package com.revature.model;
+
+public class Food {
+	
+	public int calories;
+	public String name;
+	
+	public Food(int calories, String name) {
+		this.calories = calories;
+		this.name = name;
+	}
+
+}

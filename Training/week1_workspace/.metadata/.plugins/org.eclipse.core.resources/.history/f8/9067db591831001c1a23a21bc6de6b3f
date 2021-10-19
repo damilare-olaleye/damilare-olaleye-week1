@@ -1,0 +1,16 @@
+package com.revature.app;
+
+import com.revature.model.Animal;
+
+public class Application {
+
+	public static void main(String[] args) {
+		Animal animal = new Animal("Dog", "Fido", 7, 100);
+
+	}
+	
+	public static void printHelloWorld() {
+		System.out.println("Hello world");
+	}
+
+}
