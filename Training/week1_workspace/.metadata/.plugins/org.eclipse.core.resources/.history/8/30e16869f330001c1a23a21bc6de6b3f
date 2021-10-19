@@ -1,0 +1,19 @@
+package com.revature.app; // This line of code is specifying what package this class belongs to
+// It belongs to the com.revature.app package
+// packages follow a "reverse domain" naming convention
+// So, if you work for google, your package names will usually start with com.google. <whatever else you want>. <even more of what you want>
+
+import com.revature.model.Reimbursement;
+public class Main {
+	// The shortcut we can use to create our main method is by typing main followed by ctrl + space
+	// ctrl + space will give you a dropdown containing suggestions that you can use
+	
+	public static void main(String[] args) {
+		
+		System.out.println("Hi there");
+		
+		Reimbursement reimbursement = new Reimbursement(); // This is how you create a new object, the new keyword followed by what is known as a constructor will instatiate
+		// based on that particular class.
+	}
+
+}
