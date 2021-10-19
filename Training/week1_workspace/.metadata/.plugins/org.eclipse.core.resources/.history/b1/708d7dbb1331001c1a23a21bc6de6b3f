@@ -133,11 +133,7 @@ public class Main {
 		
 		Bus bus3 = new Bus(30, 2010, "Another Model", "City");
 		
-		bus2 = bus3; // We are copying the location of the object bus3 is pointing to over to bus2
-		// This means that both bus2 and bus3 are refrencing the same object in memory
-		
-		// The original object that bus2 was pointing to, which now has 0 reference, will be garbage collected
-		bus3 = null; 
+		bus2 = bus3;
 				
 	}
 
