@@ -1,0 +1,29 @@
+package com.revature.app;
+
+import com.revature.model.Student;
+
+public class Main {
+
+	public static void main(String[] args) {
+		
+		welcomeStudent();
+		
+		Student student = new Student(001, "Mattew", "1500 Lucas rd", 23);
+		
+		student.studentInformation();
+		System.out.println(student.id);
+		
+		student.studentInformation(23);
+		System.out.println(student.age);
+		
+		student.studentInformation("Mattew", "1500 John rd");
+		System.out.println(student.name + student.address);
+		
+		
+	}
+	
+	public static void welcomeStudent() {
+		System.out.println("Hello new student");
+	}
+
+}

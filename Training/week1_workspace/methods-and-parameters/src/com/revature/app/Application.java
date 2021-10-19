@@ -9,6 +9,7 @@ public class Application {
 		
 		printHelloWorld();
 		Animal animal = new Animal("Dog", "Fido", 7, 100);
+	
 		
 		animal.play("fetch"); // overloaded method #2
 		
