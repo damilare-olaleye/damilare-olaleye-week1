@@ -1,0 +1,20 @@
+package com.revature.app;
+
+import com.revature.utils.MathUtility;
+
+public class Main {
+
+	public static void main(String[] args) {
+
+		Main.aStaticMethod();
+		aStaticMethod(); // Because aStaticMehtod is in the same class as where we are invoking the method, we do not need to reference the <Class name>.<method name()>
+
+		int results = MathUtility.power(2, 4);
+		System.out.println("2 to the power of 4 is " + results);
+	}
+	
+	public static void aStaticMethod() {
+		System.out.println("Invoked aStaticMethod");
+	}
+
+}

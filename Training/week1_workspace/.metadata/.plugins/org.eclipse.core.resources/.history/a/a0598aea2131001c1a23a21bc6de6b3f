@@ -1,0 +1,14 @@
+package com.revature.app;
+
+public class Main {
+
+	public static void main(String[] args) {
+
+		aStaticMethod();
+	}
+	
+	public static void aStaticMethod() {
+		System.out.println("Invoked aStaticMethod");
+	}
+
+}

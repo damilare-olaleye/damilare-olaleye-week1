@@ -1,0 +1,15 @@
+package model;
+
+public class Square {
+	
+	// Fields, whether they are non-static OR static, will have default values... Static to keep track of it globally, non static does not keep track of it globally
+	public double side;	// default value of 0
+	public static int numberOfInstances; // default value of 0
+	
+	public Square(double side) {
+		this.side = side;
+		
+		numberOfInstances += 1;
+	}
+	
+}

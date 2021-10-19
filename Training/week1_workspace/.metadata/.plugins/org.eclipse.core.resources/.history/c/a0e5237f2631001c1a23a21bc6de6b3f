@@ -1,0 +1,38 @@
+package com.revature.app;
+
+import com.revature.utils.MathUtility;
+
+import model.Square;
+
+public class Main {
+
+	public static void main(String[] args) {
+
+		Main.aStaticMethod();
+		aStaticMethod(); // Because aStaticMehtod is in the same class as where we are invoking the method, we do not need to reference the <Class name>.<method name()>
+
+		int results = MathUtility.power(2, 4); // power is an example of a static method that we can access from another class
+		System.out.println("2 to the power of 4 is " + results);
+		
+		double area = MathUtility.calculateCirlceArea(5);
+		System.out.println("area of a circle with radius 5 is " + area);
+		
+		Square s1 = new Square(5);
+		Square s2 = new Square(10);
+		Square s3 = new Square(15);
+		
+		System.out.println("numberOfInstances =" + Square.numberOfInstances); // Because numberOfInstances is a static variable, it belongs to the Square class itself.
+		
+		
+		Square.numberOfInstances = 10000;
+		
+		System.out.println(s1.numberOfInstances);
+		System.out.println(s2.numberOfInstances);
+		System.out.println(s3.numberOfInstances);
+	}
+	
+	public static void aStaticMethod() {
+		System.out.println("Invoked aStaticMethod");
+	}
+
+}
