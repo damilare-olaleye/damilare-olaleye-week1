@@ -1,0 +1,9 @@
+package com.revature.model;
+
+public class Bus {
+	
+	public String type;
+	public int numberOfWheels;
+	public int year;
+	public String model;
+}

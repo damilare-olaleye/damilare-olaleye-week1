@@ -1,0 +1,19 @@
+package com.revature.model;
+
+public class Bus {
+	
+	// These are known as fields
+	// we know that they are fields because they are directly specified inside the class itself and not in a method
+	
+	// Fields are different than variables declared inside of a method in that they have default values
+	// Default value for reference fields: null
+	// Default value for number 0 (integral types) 0.0 (for floating point types)
+	// Default value for boolean: false
+	
+	// (Non-static fields) are known as instance variables. They are properties scoped to individuals objects. Each object has its own copy of these properties
+	// Ex. All humans have a copy of two properties: firstName and lastName
+	public String type;
+	public int numberOfWheels;
+	public int year;
+	public String model;
+}

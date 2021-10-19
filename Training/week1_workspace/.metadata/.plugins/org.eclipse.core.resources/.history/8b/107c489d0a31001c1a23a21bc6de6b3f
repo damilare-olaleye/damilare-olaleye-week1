@@ -1,0 +1,11 @@
+package com.revature.model;
+
+public class Bus {
+	
+	// These are known as fields
+	// we know that they are fields because they are directly specified inside the class itself and not in a method
+	public String type;
+	public int numberOfWheels;
+	public int year;
+	public String model;
+}

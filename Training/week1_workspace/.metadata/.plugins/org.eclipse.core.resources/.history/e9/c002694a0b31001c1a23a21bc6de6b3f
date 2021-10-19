@@ -42,9 +42,6 @@ public class Main {
 	
 	public static void main(String[] args) {
 		primitivesExample();
-		
-		System.out.println();	
-		
 		referenceExample();
 	}
 
@@ -103,8 +100,7 @@ public class Main {
 		
 	}
 	
-	
-	public static void referenceExample(){
+	public static void referenceExample() {
 		// Reference Variables: refer to the location of an object
 		Bus bus1 = null; // Because Bus is in a different package, we must import it
 		// reference variables can either be null or be pointing to an object
@@ -113,23 +109,10 @@ public class Main {
 		bus1 = new Bus(); // new Bus() is what create a Bus object.
 		// bus1  = ... is what point the bus1 variable to the newly created object 
 		
-		bus1.model = "Greyhound";
-		bus1.type = "Express";
-		bus1.year = 2020;
-		bus1.numberOfWheels = 18;
-		
 		System.out.println(bus1.model);
 		System.out.println(bus1.numberOfWheels);
 		System.out.println(bus1.type);
 		System.out.println(bus1.year);
-		
-		Bus bus2 = new Bus(0, 0, "Some Model", "Express");
-		
-		System.out.println(bus2.model);
-		System.out.println(bus2.numberOfWheels);
-		System.out.println(bus2.type);
-		System.out.println(bus2.year);
-				
 	}
 
 }
