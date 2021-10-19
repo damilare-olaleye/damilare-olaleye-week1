@@ -49,10 +49,6 @@ public class Main {
 		
 		System.out.println("anotherByte = " + anotherByte);
 		
-		
-		// 16 bits
-		short myShort = 25_767; // _  is used for readability cannot be used at the beginning or at the end
-		
 	}
 
 }

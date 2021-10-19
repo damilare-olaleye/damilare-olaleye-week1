@@ -37,22 +37,7 @@ public class Main {
 	 */
 
 	public static void main(String[] args) {
-		/*
-		 * Integral Types
-		 */
-		
-		// 8 bits
-		byte myByte = 10; // Variable declaration
-		System.out.println("myByte = " + myByte);
-		
-		byte anotherByte = 10; // Initialization = the initial assignment of a value to a local variable. 
-		
-		System.out.println("anotherByte = " + anotherByte);
-		
-		
-		// 16 bits
-		short myShort = 25_767; // _  is used for readability cannot be used at the beginning or at the end
-		
+
 	}
 
 }
