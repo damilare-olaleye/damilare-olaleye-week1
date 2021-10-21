@@ -8,7 +8,8 @@ public class Main {
 		
 		welcomeStudent();
 		
-		Student student = new Student(4132, "John Baptise", "1500 John rd", 23);
+		Student student = new Student(1500, "John Baptise", "1500 John rd", 23);
+
 		
 		student.studentInformation();
 		System.out.println(student.id);
