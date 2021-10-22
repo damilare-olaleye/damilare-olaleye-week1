@@ -32,8 +32,6 @@ public class ArithemticController {
 		double number1 = Double.parseDouble(number1String);
 		double number2 = Double.parseDouble(number2String);
 		
-		double sum = number1 + number2;
-		
 		
 		ctx.result(arithmeticService.doAddition(number1String, number2String)) ; // Just Strings concatination and not our actual number
 	};
