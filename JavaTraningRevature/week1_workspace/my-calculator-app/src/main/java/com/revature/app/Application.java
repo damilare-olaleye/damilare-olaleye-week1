@@ -1,6 +1,9 @@
 package com.revature.app;
 
 import com.revature.controller.ArithemticController;
+import com.revature.controller.DivisionController;
+import com.revature.controller.MultiplicationController;
+import com.revature.controller.SubtractionController;
 
 import io.javalin.Javalin;
 import io.javalin.http.staticfiles.Location;
@@ -17,8 +20,16 @@ public class Application {
 		});
 		
 		// Instantiate our Controller
-		ArithemticController controller1 = new ArithemticController();
-		controller1.registerEndpoint(app);
+		ArithemticController arithemticController = new ArithemticController();
+		MultiplicationController mutlplicationController = new MultiplicationController();
+		SubtractionController subtractionController = new SubtractionController();
+		DivisionController divisionController = new DivisionController();
+		
+		arithemticController.registerEndpoint(app);
+		mutlplicationController.registerEndpoint(app);
+		subtractionController.registerEndpoint(app);
+		divisionController.registerEndpoint(app);
+		
 		app.start(8080); // start server on port 8080
 
 	}
