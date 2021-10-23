@@ -24,7 +24,7 @@ public class ArithemticController {
 		ctx.result("add lamda invoked");
 		
 		// Double class
-		// the Dobule class has a static method called parseDouble that can take a String and return a double primitive representation of that String
+		// the Double class has a static method called parseDouble that can take a String and return a double primitive representation of that String
 		
 		String number1String = ctx.formParam("number1");
 		String number2String = ctx.formParam("number2");
@@ -49,7 +49,7 @@ public class ArithemticController {
 		ctx.result("multiply lamda invoked");
 		
 		// Double class
-		// the Dobule class has a static method called parseDouble that can take a String and return a double primitive representation of that String
+		// the Double class has a static method called parseDouble that can take a String and return a double primitive representation of that String
 		
 		String number1String = ctx.formParam("number1");
 		String number2String = ctx.formParam("number2");
