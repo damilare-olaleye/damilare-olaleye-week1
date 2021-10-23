@@ -1,74 +1,96 @@
 <!DOCTYPE html>
 <html lang="en">
-<head> <!-- The purpose of the head tag is to provide metadata for an HTML page -->
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Calculator App</title> <!-- The title tag is what shows up when you see the text for a particular tag -->
+
+<head>
+	<!-- The purpose of the head tag is to provide metadata for an HTML page -->
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Calculator App</title> <!-- The title tag is what shows up when you see the text for a particular tag -->
 </head>
-<body> <!-- This is where the bulk of the coontent goes on your webpage -->
-    <form action="http://localhost:8080/add" method="POST" target="result"> <!-- The purpose of a form is to submit data somewhere -->
-            <!-- We have 2 different attributes to be concerned with 
+
+<body>
+	<!-- This is where the bulk of the coontent goes on your webpage -->
+	<form action="http://localhost:8080/add" method="POST" target="addResult">
+		<!-- The purpose of a form is to submit data somewhere -->
+		<!-- We have 2 different attributes to be concerned with 
                 1. action attribute: the location of where we want to send the data to 
                 2. method attribute: the HTTP method that we want to use (GET, POST, PATCH, PUT, DELETE)
             -->
 
-            <!-- Next define some input elements that will contain the information that we want to send -->
-            <input type="number" step="0.01" name="number1" placeholder="0">
-            <input type="number" step="0.01" name="number2" placeholder="0">
-            <button type="submit">Add Numbers</button>
-    </form>
+		<!-- Next define some input elements that will contain the information that we want to send -->
+		<input id="addNum1" type="number" step="0.01" name="number1" placeholder="0">
+		<input id="addNum2" type="number" step="0.01" name="number2" placeholder="0">
+		<button id="addButton" type="submit">Add Numbers</button>
+	</form>
 
-    <br>
-    <br>
+	<iframe name="addResult" frameborder="0">
+	</iframe>
 
-    <form action="http://localhost:8080/multiply" method="POST" target="result"> <!-- The purpose of a form is to submit data somewhere -->
-        <!-- We have 2 different attributes to be concerned with 
+	<br>
+	<br>
+
+	<form action="http://localhost:8080/multiply" method="POST" target="multiplyResult">
+		<!-- The purpose of a form is to submit data somewhere -->
+		<!-- We have 2 different attributes to be concerned with 
             1. action attribute: the location of where we want to send the data to 
             2. method attribute: the HTTP method that we want to use (GET, POST, PATCH, PUT, DELETE)
         -->
 
-        <!-- Next define some input elements that will contain the information that we want to send -->
-        <input type="number" step="0.01" name="number1" placeholder="0">
-        <input type="number" step="0.01" name="number2" placeholder="0">
-        <button type="submit">Multiply Numbers</button>
-    </form>
+		<!-- Next define some input elements that will contain the information that we want to send -->
+		<input id="multiplyNum1" type="number" step="0.01" name="number1" placeholder="0">
+		<input id="multiplyNum2" type="number" step="0.01" name="number2" placeholder="0">
+		<button id="multiplyButton" type="submit">Multiply Numbers</button>
+	</form>
 
-    <br>
-    <br>
+	<iframe name="multiplyResult" frameborder="0">
+	</iframe>
 
-    <form action="http://localhost:8080/subtract" method="POST" target="result"> <!-- The purpose of a form is to submit data somewhere -->
-        <!-- We have 2 different attributes to be concerned with 
+	<br>
+	<br>
+
+	<form action="http://localhost:8080/subtract" method="POST" target="subtractResult">
+		<!-- The purpose of a form is to submit data somewhere -->
+		<!-- We have 2 different attributes to be concerned with 
             1. action attribute: the location of where we want to send the data to 
             2. method attribute: the HTTP method that we want to use (GET, POST, PATCH, PUT, DELETE)
         -->
 
-        <!-- Next define some input elements that will contain the information that we want to send -->
-        <input type="number" step="0.01" name="number1" placeholder="0">
-        <input type="number" step="0.01" name="number2" placeholder="0">
-        <button type="submit">Subtract Numbers</button>
-    </form>
+		<!-- Next define some input elements that will contain the information that we want to send -->
+		<input type="number" step="0.01" name="number1" placeholder="0">
+		<input type="number" step="0.01" name="number2" placeholder="0">
+		<button type="submit">Subtract Numbers</button>
+	</form>
 
-    <br>
-    <br>
+	<iframe name="subtractResult" frameborder="0">
+	</iframe>
 
-    <form action="http://localhost:8080/divide" method="POST" target="result"> <!-- The purpose of a form is to submit data somewhere -->
-        <!-- We have 2 different attributes to be concerned with 
+
+	<br>
+	<br>
+
+	<form action="http://localhost:8080/divide" method="POST" target="divideResult">
+		<!-- The purpose of a form is to submit data somewhere -->
+		<!-- We have 2 different attributes to be concerned with 
             1. action attribute: the location of where we want to send the data to 
             2. method attribute: the HTTP method that we want to use (GET, POST, PATCH, PUT, DELETE)
         -->
 
-        <!-- Next define some input elements that will contain the information that we want to send -->
-        <input type="number" step="0.01" name="number1" placeholder="0">
-        <input type="number" step="0.01" name="number2" placeholder="0">
-        <button type="submit">Divide Numbers</button>
-    </form>
+		<!-- Next define some input elements that will contain the information that we want to send -->
+		<input type="number" step="0.01" name="number1" placeholder="0">
+		<input type="number" step="0.01" name="number2" placeholder="0">
+		<button type="submit">Divide Numbers</button>
+	</form>
 
-    <br>
-    <br>
+	<iframe name="divideResult" frameborder="0">
+	</iframe>
 
-    <!--- The purpose of this iframe is to display the response from the backend whenever we perform addition -->
-    <iframe name="result" frameborder="0">
-    </iframe>
+	<br>
+	<br>
+
+	<!--- The purpose of this iframe is to display the response from the backend whenever we perform addition -->
+	<!-- <iframe name="result" frameborder="0">
+	</iframe> -->
 </body>
+
 </html>
